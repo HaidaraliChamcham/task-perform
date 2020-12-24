@@ -10,7 +10,6 @@ export default function Demo() {
     setSubjectNumber(Number(subjectNumber) + Number(incrementBy));
   }
   const checker = (e) => {
-    console.log(e.target.value);
     if(!e.target.value) {
       setSubjectNumber(100);
     }
