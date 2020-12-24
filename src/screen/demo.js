@@ -9,7 +9,12 @@ export default function Demo() {
     e.preventDefault();
     setSubjectNumber(Number(subjectNumber) + Number(incrementBy));
   }
-
+  const checker = (e) => {
+    console.log(e.target.value);
+    if(!e.target.value) {
+      setSubjectNumber(100);
+    }
+  }
   return (
     <div className="container">
       <div className="row">
@@ -22,7 +27,7 @@ export default function Demo() {
               <option value="-1">-1</option>
               <option value="-2">-2</option>
             </select><br></br>
-            <input type="number" value={subjectNumber} onChange={(e) => setSubjectNumber(e.target.value)}></input><br />
+            <input type="number" id="no" value={subjectNumber}  onBlur={checker} onChange={(e) => setSubjectNumber(e.target.value)}></input><br />
 
             <button onClick={submitHandler}>Execute</button>
           </form>
