@@ -2,3 +2,7 @@
     padding: 65px 0;
     text-align: center;
 }
+
+.card-body:hover {
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
