@@ -1,4 +1,4 @@
-.box-background {
-    background-color: #efefef;
-    border: solid 1px black;
+.center {
+    padding: 65px 0;
+    text-align: center;
 }
