@@ -23,7 +23,7 @@ export default function Demo() {
             <div className="card-body">
               <form className="form-group" onSubmit={submitHandler}>
                 <select  className="form-control" onChange={(e) => setIncrementBy(e.target.value)} value={incrementBy}>
-                  <option value=""> Please Select</option>
+                  <option value=""> Please Select Number</option>
                   <option value="1">+1</option>
                   <option value="2">+2</option>
                   <option value="-1">-1</option>
