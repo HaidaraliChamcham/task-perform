@@ -22,7 +22,7 @@ export default function Demo() {
           <div className="card">
             <div className="card-body">
               <form className="form-group" onSubmit={submitHandler}>
-                <select  className="form-control" onChange={(e) => setIncrementBy(e.target.value)} value={incrementBy}>
+                <select className="form-control" onChange={(e) => setIncrementBy(e.target.value)} value={incrementBy}>
                   <option value=""> Please Select Number</option>
                   <option value="1">+1</option>
                   <option value="2">+2</option>
@@ -31,14 +31,14 @@ export default function Demo() {
                 </select><br></br>
                 <input type="number" className="form-control" id="no" value={subjectNumber} onBlur={checker} onChange={(e) => setSubjectNumber(e.target.value)}></input>
                 <br />
-               <button className="btn btn-primary" onClick={submitHandler}>Execute</button>
+                <button className="btn btn-primary" onClick={submitHandler}>Execute</button>
               </form>
             </div>
           </div>
         </div>
 
 
-        <div className="col-sm-6"> 
+        <div className="col-sm-6">
           <div className="card">
             <div className="card-body">
               <div className="card-title center align-middle">
