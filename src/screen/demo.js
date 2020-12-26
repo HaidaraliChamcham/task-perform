@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Demo() {
   const [incrementBy, setIncrementBy] = useState('');
-  const [subjectNumber, setSubjectNumber] = useState('100');
+  const [subjectNumber, setSubjectNumber] = useState(100);
 
 
   var submitHandler = (e) => {
@@ -11,7 +11,7 @@ export default function Demo() {
   }
   const checker = (e) => {
     if (!e.target.value) {
-      setSubjectNumber('100');
+      setSubjectNumber(100);
     }
   }
   return (
